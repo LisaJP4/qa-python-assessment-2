@@ -30,8 +30,9 @@
 # <HINT>
 # How does a for loop iterate through a string?
 
-def one(string):
-    return ""
+def one(str):
+    for i in range(len(str)):
+        return (i * 3)
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -52,7 +53,11 @@ def one(string):
 
 
 def two(number):
-    return False
+    for i in range(1, number, x):
+        if number % x == 0:
+            return False
+        else: 
+            return True
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -72,8 +77,7 @@ def two(number):
 
 
 def three(a):
-    return 1
-
+    
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
     # <QUESTION 4>
@@ -104,7 +108,13 @@ def three(a):
 
 
 def four(string1, string2):
-    return ""
+    str1 = string1.list()
+    str2 = string2.list()
+    for i in str1:
+        for j in str2:
+            return "".join(i + j)
+
+
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -122,9 +132,10 @@ def four(string1, string2):
     # There is a module which can be used to generate random numbers, this module is called random.
     # The random module contains a function called randint.
 
+import random
 
 def five():
-    return []
+    return random.randint(100, 200, 2)
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -146,8 +157,12 @@ def five():
 
 
 def six(string):
-    return False
-
+    i = string.find("py")
+    if i in len(string[-2:-1]):
+        return True
+    else:
+        return False
+        
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
     # <QUESTION 7>
@@ -214,7 +229,7 @@ def eight(string,  a):
 
 
 def nine(string1, string2):
-    return False
+    
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -234,7 +249,5 @@ def nine(string1, string2):
     # Think about nesting for loops.
 
 
-def ten(x, y):
-    return []
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
