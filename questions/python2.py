@@ -209,7 +209,9 @@ def seven(a, b, c):
 
 
 def eight(string, n, a):
-    output = string.replace([])
+    output = string.replace((string[-n:n]), "")
+    return output
+
     
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -230,9 +232,9 @@ def eight(string, n, a):
 
 
 def nine(string1, string2):
-    list1 = string1.split()
-    list2 = string2.split()
-    if list2 in list1:
+    a = len(string1)
+    b = len(string2)
+    if b in a:
         return True
     else:
         return False
