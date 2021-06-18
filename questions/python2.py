@@ -162,7 +162,7 @@ def six(string):
         return True
     else:
         return False
-        
+
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
     # <QUESTION 7>
@@ -208,8 +208,9 @@ def seven(a, b, c):
     # Use the cli to access the documentation help(str.replace)
 
 
-def eight(string,  a):
-    return ""
+def eight(string, n, a):
+    output = string.replace([])
+    
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -229,6 +230,14 @@ def eight(string,  a):
 
 
 def nine(string1, string2):
+    list1 = string1.split()
+    list2 = string2.split()
+    if list2 in list1:
+        return True
+    else:
+        return False
+
+
     
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
